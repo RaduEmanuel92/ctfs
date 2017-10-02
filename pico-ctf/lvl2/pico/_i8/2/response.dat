@@ -1,0 +1,8 @@
+HTTP/1.1 400 Bad Request
+Content-Type: application/json
+Access-Control-Allow-Origin: *
+Date: Sun, 02 Apr 2017 08:54:14 GMT
+Connection: keep-alive
+Transfer-Encoding: chunked
+
+{"code":0,"message":"Transport unknown"}

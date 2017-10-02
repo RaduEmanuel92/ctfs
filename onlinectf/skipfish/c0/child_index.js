@@ -1,0 +1,5 @@
+var child = [
+  { 'dupe': false, 'type': 4, 'name': 'cdn-cgi', 'dir': 'c0', 'linked': 2, 'url': 'http://web.onlinectf.com/cdn-cgi/', 'fetched': true, 'code': 404, 'len': 279, 'decl_mime': 'text/html', 'sniff_mime': '[none]', 'cset': 'iso-8859-1', 'missing': true, 'csens': false, 'child_cnt': 3, 'issue_cnt': [ 12, 0, 0, 0, 0 ], 'sig': 0x5adf9f98 },
+  { 'dupe': false, 'type': 4, 'name': 'cdn-cgi', 'dir': 'c1', 'linked': 2, 'url': 'http://web.onlinectf.com/cdn-cgi/', 'fetched': true, 'code': 404, 'len': 279, 'decl_mime': 'text/html', 'sniff_mime': '[none]', 'cset': 'iso-8859-1', 'missing': true, 'csens': false, 'child_cnt': 0, 'issue_cnt': [ 1, 0, 0, 0, 0 ], 'sig': 0xfffad5cd },
+  { 'dupe': false, 'type': 4, 'name': 'hope', 'dir': 'c2', 'linked': 2, 'url': 'http://web.onlinectf.com/hope/', 'fetched': true, 'code': 200, 'len': 113, 'decl_mime': 'text/html', 'sniff_mime': 'text/html', 'cset': 'UTF-8', 'missing': false, 'csens': false, 'child_cnt': 0, 'issue_cnt': [ 3, 0, 0, 0, 0 ], 'sig': 0xc98a661f },
+];

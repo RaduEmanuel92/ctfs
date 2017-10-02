@@ -1,0 +1,8 @@
+GET http://web.onlinectf.com/ name=http://web.onlinectf.com/ type=serv linked=yes browsers=0 browser_used=FAST dup=0 code=403 len=282 notes=6 sig=0xcbd5e1a5
+GET http://web.onlinectf.com/cdn-cgi/ name=cdn-cgi type=dir linked=yes browsers=4 browser_used=FAST dup=0 returns_404 code=404 len=279 notes=1 sig=0x5adf9f98
+GET http://web.onlinectf.com/cdn-cgi/apps/ name=apps type=dir linked=yes browsers=0 browser_used=FAST dup=0 returns_404 code=404 len=99 notes=8 sig=0x7c4c43e6
+GET http://web.onlinectf.com/cdn-cgi/apps/head/ name=head type=dir linked=yes browsers=0 browser_used=FAST dup=0 returns_404 code=404 len=99 notes=1 sig=0x5ad09f96
+GET http://web.onlinectf.com/cdn-cgi/apps/head/MskGiEO69uxdSBPxmeW98HVt_Ac.js name=MskGiEO69uxdSBPxmeW98HVt_Ac.js type=file linked=yes browsers=0 browser_used=FAST dup=0 code=200 len=39543 notes=2 sig=0xfff5810e
+GET http://web.onlinectf.com/cdn-cgi/ name=cdn-cgi type=dir linked=yes browsers=0 browser_used=PHONE dup=0 returns_404 code=404 len=279 notes=1 sig=0xfffad5cd
+GET http://web.onlinectf.com/hope/ name=hope type=dir linked=yes browsers=4 browser_used=FAST dup=0 code=200 len=113 notes=3 sig=0xc98a661f
+GET http://web.onlinectf.com/hope/ name=hope type=dir linked=yes browsers=0 browser_used=PHONE dup=1 code=200 len=113 notes=3 sig=0xc98a661f

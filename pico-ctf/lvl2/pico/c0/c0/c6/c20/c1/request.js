@@ -1,0 +1,1 @@
+var req = {'data':'GET /public/lib/renderers/webgl/ HTTP/1.1\x0d\x0aHost: shell2017.picoctf.com:16929\x0d\x0aAccept-Encoding: gzip\x0d\x0aConnection: keep-alive\x0d\x0aUser-Agent: Mozilla/5.0 SF/2.10b\x0d\x0aRange: bytes=0-399999\x0d\x0aReferer: http://shell2017.picoctf.com/\x0d\x0a\x0d\x0a'}

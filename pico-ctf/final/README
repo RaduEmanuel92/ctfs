@@ -1,0 +1,11 @@
+Putem suprascrie ebp+4(ret) si ebp+8 in runGame. Citirea se face in
+inputStr, un vector global. Pentru verificarea comenzilor se foloseste
+doar primul caracter introdus si se citesc 7 de fiecare data deci avem
+6 caractere ce le putem folosi. Am ales ret sa fie inputStr+1(sarim peste
+caracterul pentru comanda) si ce se gaseste la ebp+8 sa fie o adresa
+rwx din memorie iar inputStr sa fie "a"+call readInput + ret.
+readInput are 2 parametrii: destinatie si numar de caractere.
+In momentul cat iese din runGame se citeste un string la adresa
+data. Cel de-al doilea parametru al functiei readInput este
+o valoarea prezenta anterior pe stiva suficient de mare ce ne permite
+sa introducem un shellcode si sa sarim la el prin ret.

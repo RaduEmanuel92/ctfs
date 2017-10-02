@@ -1,0 +1,16 @@
+HTTP/1.1 200 Partial Content
+Date: Sun, 17 Sep 2017 14:38:49 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: PHP/7.0.23
+flag: flag(k4rEfUL_D0nT_H1T_y0uR_HE4dEr)
+X-Frame-Options: SAMEORIGIN
+X-Mod-Pagespeed: 1.9.32.14-0
+Cache-Control: max-age=0, no-cache
+Content-Range: bytes 0-39/40
+Server: cloudflare-nginx
+CF-RAY: 39fccfb4b5ff28fc-OTP
+
+<head/><h1>There is Only One Hope.</h1>
+<script src="/cdn-cgi/apps/head/MskGiEO69uxdSBPxmeW98HVt_Ac.js"></script>Â!

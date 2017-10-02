@@ -1,0 +1,5 @@
+var child = [
+  { 'dupe': true, 'type': 32, 'name': 'AbstractFilter', 'dir': 'c0', 'linked': 1, 'url': 'http://shell2017.picoctf.com:16929/public/lib/renderers/webgl/filters/AbstractFilter', 'fetched': true, 'code': 404, 'len': 188, 'decl_mime': 'text/html', 'sniff_mime': '[none]', 'cset': 'utf-8', 'missing': true, 'csens': false, 'child_cnt': 0, 'issue_cnt': [ 0, 0, 0, 0, 0 ], 'sig': 0xffdfffff },
+  { 'dupe': true, 'type': 32, 'name': 'FXAAFilter', 'dir': 'c1', 'linked': 1, 'url': 'http://shell2017.picoctf.com:16929/public/lib/renderers/webgl/filters/FXAAFilter', 'fetched': true, 'code': 404, 'len': 184, 'decl_mime': 'text/html', 'sniff_mime': '[none]', 'cset': 'utf-8', 'missing': true, 'csens': false, 'child_cnt': 0, 'issue_cnt': [ 0, 0, 0, 0, 0 ], 'sig': 0xffdfffff },
+  { 'dupe': true, 'type': 32, 'name': 'SpriteMaskFilter', 'dir': 'c2', 'linked': 1, 'url': 'http://shell2017.picoctf.com:16929/public/lib/renderers/webgl/filters/SpriteMaskFilter', 'fetched': true, 'code': 404, 'len': 190, 'decl_mime': 'text/html', 'sniff_mime': '[none]', 'cset': 'utf-8', 'missing': true, 'csens': false, 'child_cnt': 0, 'issue_cnt': [ 0, 0, 0, 0, 0 ], 'sig': 0xffdfffff }
+];

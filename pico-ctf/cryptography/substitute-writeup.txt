@@ -1,0 +1,2 @@
+1. simple substitution cipher
+2. use http://quipqiup.com/ to crack substitution ciphers

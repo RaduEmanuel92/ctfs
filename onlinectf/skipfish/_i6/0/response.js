@@ -1,0 +1,1 @@
+var res = {'data':'HTTP/1.1 403 Forbidden\x0aDate: Sun, 17 Sep 2017 14:38:45 GMT\x0aContent-Type: text/html; charset=iso-8859-1\x0aTransfer-Encoding: chunked\x0aConnection: keep-alive\x0aSet-Cookie: __cfduid=d707dcbd230f836b68f48d93ab4cdcd9b1505659125; expires=Mon, 17-Sep-18 14:38:45 GMT; path=/; domain=.onlinectf.com; HttpOnly\x0a\x0a[...truncated...]\x0a'}

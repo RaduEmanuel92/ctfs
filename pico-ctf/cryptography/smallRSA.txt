@@ -1,0 +1,4 @@
+1. a large 'e' parameter in RSA means small d
+2. use https://en.wikipedia.org/wiki/Wiener%27s_attack to find the small d
+3. use this github code for wiener attack (and trust the math), https://github.com/pablocelayes/rsa-wiener-attack
+3. once you know d, message = pow(c, d, n)

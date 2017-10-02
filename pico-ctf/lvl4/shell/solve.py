@@ -1,0 +1,104 @@
+#!/usr/bin/python
+import struct
+import socket
+import telnetlib
+#import sympy
+
+def readuntil(f, delim='> '):
+    data = ''
+    while not data.endswith(delim):
+        data += f.read(1)
+    return data
+
+def p(v):
+    return struct.pack('<Q', v)
+
+def u(v):
+    return struct.unpack('<Q', v)[0]
+
+def itof(x):
+    return struct.unpack("<f", struct.pack("<I", x))[0]
+
+def ftoi(x):
+    return struct.unpack("<I", struct.pack("<f", x))[0] 
+
+def stoi(x):
+    return int(('0x' + x[::-1].encode('hex')), 16)
+
+
+def egcd(a, b):
+    if a == 0:
+        return (b, 0, 1)
+    else:
+        g, y, x = egcd(b % a, a)
+        return (g, x - (b // a) * y, y)
+
+def modinv(a, m):
+    gcd, x, y = egcd(a, m)
+    if gcd != 1:
+        return None  # modular inverse does not exist
+    else:
+        return x % m
+
+def read_encrypted(KEY, data):
+    #data = raw_input("").decode('hex')
+    IV, data = data[:BLOCK_SIZE], data[BLOCK_SIZE:]
+    aes = AES.new(KEY, AES.MODE_CBC, IV)
+    m = unpad(aes.decrypt(data))
+    return m
+
+
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+s.connect(('shell2017.picoctf.com', 22071))
+f = s.makefile('rw', bufsize=0)
+
+
+p =  174807157365465092731323561678522236549173502913317875393564963123330281052524687450754910240009920154525635325209526987433833785499384204819179549544106498491589834195860008906875039418684191252537604123129659746721614402346449135195832955793815709136053198207712511838753919608894095907732099313139446299843
+g =  41899070570517490692126143234857256603477072005476801644745865627893958675820606802876173648371028044404957307185876963051595214534530501331532626624926034521316281025445575243636197258111995884364277423716373007329751928366973332463469104730271236078593527144954324116802080620822212777139186990364810367977
+A =  118273972112639120186970068947944724773714770611796145560317038505039351377800437911584090954295445815108415228076067419564334318734103894856428799576147989726840111816497674618324630523684004675727128364154281009934628997112127793757633331795515579928803348552388657916707518365689221161578522942036857923828
+B =  93745993751447503346396377281638158212564483727794429481438000562251573416232023154361841727945097797806065461693048826773559972703901706048613213733868461602449808032567839707922022630860776385491198101215693030172217682493643125763047405649582118389305170287200364245392146359258691658118945747317260110074
+
+auth =   '51c684d90e37ba0b1b7b3326e979dd3be011d361c1a4468ff7bea43e5d7438ff5f6b933eacf32641b258b4127ce9faa56d3d200a684215f2dee66bb7b66b7813e890233ea0859e410bb9034e59c45afcb5631d70fe32ed76dece4600d5bd8e85c4031085a3a79cb466dd4b212025aa02'
+response1   = '10f13939f92ef9af577d154699e7d1e77eba3e252f127c807117f56541de90c44beb0baffaf54e623611fc9b86ec79cd'
+client_msg2 = '9125f22f94e17050d971c3cde99cff258ca709ef469a93a00c72e86449a44838'
+response2   = 'd5af9504c86c8e76a97c93da2e21e6d7789fce1a111f40dbb2093596e4c34be7'
+
+e0 d341 59fc  AAAAAAAAAAA..AY.
+00000620: 7f
+
+  7ffc5941d3e0
+0x7ffff7b1659e
+#Finding a in order to guess the password
+
+
+# for this auth, setting B = 1
+# as a result, KEY would be 
+# sha256(1) = '6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b'
+
+
+B   = 1
+KEY = '6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b'.decode('hex')
+
+command = 'cat flag.txt'
+returned_IV = '2222'
+returned_result '2222'
+data = returned_IV + returned_result
+flag = read_encrypted(KEY, data)
+
+
+readuntil(f, "B:")
+
+print "Sending B: ", B
+
+f.write(B)
+f.write('\n')
+
+#readuntil(f, '')
+print "Sending CT: ", auth
+f.write(auth)
+f.write('\n')
+readuntil(f, '\n')
+
+t = telnetlib.Telnet()
+t.sock = s
+t.interact()

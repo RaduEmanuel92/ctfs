@@ -1,0 +1,198 @@
+http://shell2017.picoctf.com:16929//node_modules/socket.io/lib/namespace.js:
+ * Flags.
+exports.flags = [
+ * Apply flags from `Socket`.
+exports.flags.forEach(function(flag){
+  Object.defineProperty(Namespace.prototype, flag, {
+      this.flags = this.flags || {};
+      this.flags[flag] = true;
+      flags: this.flags
+    delete this.flags;
+  // delete rooms flag for scenario:
+ * Sets the compress flag.
+  this.flags = this.flags || {};
+  this.flags.compress = compress;
+
+
+http://shell2017.picoctf.com:16929//node_modules/socket.io/lib/socket.js:
+ * Flags.
+var flags = [
+ * Apply flags from `Socket`.
+flags.forEach(function(flag){
+  Object.defineProperty(Socket.prototype, flag, {
+      this.flags = this.flags || {};
+      this.flags[flag] = true;
+    var flags = this.flags || {};
+      if (this._rooms || flags.broadcast) {
+    if (this._rooms || flags.broadcast) {
+        flags: flags
+        volatile: flags.volatile,
+        compress: flags.compress
+    // reset flags
+    delete this.flags;
+ * Sets the compress flag.
+  this.flags = this.flags || {};
+  this.flags.compress = compress;
+
+
+http://shell2017.picoctf.com:16929//node_modules/socket.io/lib/index.js:
+Namespace.flags.forEach(function(flag){
+  Object.defineProperty(Server.prototype, flag, {
+      this.sockets.flags = this.sockets.flags || {};
+      this.sockets.flags[flag] = true;
+
+
+http://shell2017.picoctf.com:16929//node_modules/socket.io/History.md:
+  * [feature] Add a `local` flag (#2628)
+  * namespace: clear rooms flag after a clients call (fixes #1978)
+  * support flags on namespace
+  * Revert "Fixes leaking Redis subscriptions for #663. The local flag was not getting passed through onClientDisconnect()."
+  * Fixes leaking Redis subscriptions for #663. The local flag was not getting passed through onClientDisconnect().
+    This solves a problem with cross-domain requests being flagged as aborted and
+
+
+http://shell2017.picoctf.com:16929//node_modules/socket.io/node_modules/debug/CHANGELOG.md:
+  * Added `.enabled` flag to the node version [TooTallNate]
+
+
+http://shell2017.picoctf.com:16929//node_modules/morgan/README.md:
+var accessLogStream = fs.createWriteStream(path.join(__dirname, 'access.log'), {flags: 'a'})
+
+
+http://shell2017.picoctf.com:16929//node_modules/express/lib/router/layer.js:
+  // set fast path flags
+
+
+http://shell2017.picoctf.com:16929//node_modules/express/History.md:
+  * fix `express(1)` -h flag, use -H for hogan. Closes #1245
+  * Added _-s, --session[s]_ flag to express(1) to add session related middleware
+  * Added _--template_ flag to express(1) to specify the
+  * Added _--css_ flag to express(1) to specify the
+
+
+http://shell2017.picoctf.com:16929//node_modules/body-parser/lib/read.js:
+  // flag as parsed
+
+
+http://shell2017.picoctf.com:16929//node_modules/clone/clone.js:
+      child = new RegExp(parent.source, __getRegExpFlags(parent));
+function __getRegExpFlags(re) {
+  var flags = '';
+  if (re.global) flags += 'g';
+  if (re.ignoreCase) flags += 'i';
+  if (re.multiline) flags += 'm';
+  return flags;
+clone.__getRegExpFlags = __getRegExpFlags;
+
+
+http://shell2017.picoctf.com:16929//node_modules/clone/README.md:
+  - Fix call on getRegExpFlags
+  - Directly call getRegExpFlags
+
+
+http://shell2017.picoctf.com:16929//node_modules/beautiful-log/README.md:
+which rest arguments are enabled by defualt) or run with the `--harmony` flag.
+
+
+http://shell2017.picoctf.com:16929//node_modules/beautiful-log/lib.es6.d.ts:
+      * Returns a string indicating the flags of the regular expression in question. This field is read-only.
+      * If no flags are set, the value is the empty string.
+    flags: string;
+      * Returns a Boolean value indicating the state of the sticky flag (y) used with a regular 
+      * Returns a Boolean value indicating the state of the Unicode flag (u) used with a regular 
+      * @param regexp A variable name or string literal containing the regular expression pattern and flags.
+      * @param regexp A regular expression object that contains the regular expression pattern and applicable flags. 
+      * @param searchValue A Regular Expression object containing the regular expression pattern and applicable flags.
+      * @param searchValue A Regular Expression object containing the regular expression pattern and applicable flags
+      * @param regexp The regular expression pattern and applicable flags. 
+      * @param regexp The regular expression pattern and applicable flags. 
+    /** Returns a Boolean value indicating the state of the global flag (g) used with a regular expression. Default is false. Read-only. */
+    /** Returns a Boolean value indicating the state of the ignoreCase flag (i) used with a regular expression. Default is false. Read-only. */
+    /** Returns a Boolean value indicating the state of the multiline flag (m) used with a regular expression. Default is false. Read-only. */
+    new (pattern: string, flags?: string): RegExp;
+    (pattern: string, flags?: string): RegExp;
+      * @param entityReferenceExpansion A flag that specifies whether entity reference nodes are expanded.
+      * @param entityReferenceExpansion A flag that specifies whether entity reference nodes are expanded.
+      * Gets or sets a flag that indicates whether the client provides a set of controls for the media (in case the developer does not include controls for the player).
+      * Gets or sets a flag to specify whether playback should restart after it completes.
+      * Gets or sets a flag that indicates whether the audio (either audio or the audio track on video media) is muted.
+      * Gets a flag that specifies whether playback is paused.
+      * Gets a flag that indicates whether the the client is currently moving to a new playback position in the media resource.
+    MSGESTURE_FLAG_BEGIN: number;
+    MSGESTURE_FLAG_CANCEL: number;
+    MSGESTURE_FLAG_END: number;
+    MSGESTURE_FLAG_INERTIA: number;
+    MSGESTURE_FLAG_NONE: number;
+    MSGESTURE_FLAG_BEGIN: number;
+    MSGESTURE_FLAG_CANCEL: number;
+    MSGESTURE_FLAG_END: number;
+    MSGESTURE_FLAG_INERTIA: number;
+    MSGESTURE_FLAG_NONE: number;
+    createSVGPathSegArcAbs(x: number, y: number, r1: number, r2: number, angle: number, largeArcFlag: boolean, sweepFlag: boolean): SVGPathSegArcAbs;
+    createSVGPathSegArcRel(x: number, y: number, r1: number, r2: number, angle: number, largeArcFlag: boolean, sweepFlag: boolean): SVGPathSegArcRel;
+    largeArcFlag: boolean;
+    sweepFlag: boolean;
+    largeArcFlag: boolean;
+    sweepFlag: boolean;
+    findText(string: string, count?: number, flags?: number): boolean;
+    depthMask(flag: boolean): void;
+
+
+http://shell2017.picoctf.com:16929//node_modules/mongodb/lib/apm.js:
+          // Flags
+          // If we have a explain flag
+
+
+http://shell2017.picoctf.com:16929//node_modules/mongodb/lib/db.js:
+ * @param {number} [options.flags=null] Optional. Available for the MMAPv1 storage engine only to set the usePowerOf2Sizes and the noPadding flag.
+  // Copy the options and add out internal override of the not shared flag
+
+
+http://shell2017.picoctf.com:16929//node_modules/mongodb/lib/collection.js:
+ * can be overridden by setting the **forceServerObjectId** flag.
+ * can be overridden by setting the **forceServerObjectId** flag.
+ * can be overridden by setting the **forceServerObjectId** flag.
+ * can be overridden by setting the **forceServerObjectId** flag.
+
+
+http://shell2017.picoctf.com:16929//node_modules/mongodb/lib/cursor.js:
+// Flags allowed for cursor
+var flags = ['tailable', 'oplogReplay', 'noCursorTimeout', 'awaitData', 'exhaust', 'partial'];
+ * collection.find({}).addCursorFlag('tailable', true)            // Set cursor as tailable
+ * collection.find({}).addCursorFlag('oplogReplay', true)         // Set cursor as oplogReplay
+ * collection.find({}).addCursorFlag('noCursorTimeout', true)     // Set cursor as noCursorTimeout
+ * collection.find({}).addCursorFlag('awaitData', true)           // Set cursor as awaitData
+ * collection.find({}).addCursorFlag('partial', true)             // Set cursor as partial
+    self.addCursorFlag('noCursorTimeout', true);
+ * Add a cursor flag to the cursor
+ * @param {string} flag The flag to set, must be one of following ['tailable', 'oplogReplay', 'noCursorTimeout', 'awaitData', 'partial'].
+ * @param {boolean} value The flag boolean value.
+Cursor.prototype.addCursorFlag = function(flag, value) {
+  if(flags.indexOf(flag) == -1) throw MongoError.create({message: f("flag %s not a supported flag %s", flag, flags), driver:true });
+  if(typeof value != 'boolean') throw MongoError.create({message: f("flag %s must be a boolean value", flag), driver:true});
+  this.s.cmd[flag] = value;
+define.classMethod('addCursorFlag', {callback: false, promise:false, returns: [Cursor]});
+ * @param {boolean} value The flag boolean value.
+
+
+http://shell2017.picoctf.com:16929//node_modules/mongodb/lib/gridfs-stream/index.js:
+ * @param {boolean} [options.noCursorTimeout=null] Optionally set cursor's `noCursorTimeout` flag
+    cursor.addCursorFlag('noCursorTimeout', options.noCursorTimeout);
+
+
+http://shell2017.picoctf.com:16929//node_modules/mongodb/HISTORY.md:
+  * NODE-848 BSON Regex flags must be alphabetically ordered.
+* Added promoteValues flag (default to true) to allow user to specify they only want wrapped BSON values back instead of promotion to native types.
+* Fix timeout issue using new flags #1361.
+* OpReplay flag correctly set on Wire protocol query.
+* Fixed issue where addCursorFlag was not correctly setting the flag on the command for mongodb-core.
+* Added fullResult flag to insert/update/remove which will pass raw result document back. Document contents will vary depending on the server version the driver is talking to. No attempt is made to coerce a joint response.
+* Support for OP_LOG_REPLAY flag (NODE-94)
+
+
+http://shell2017.picoctf.com:16929//node_modules/mongodb/yarn.lock:
+has-flag@^1.0.0:
+  resolved "https://registry.yarnpkg.com/has-flag/-/has-flag-1.0.0.tgz#9d9e793165ce017a00f00418c43f942a7b1d11fa"
+    has-flag "^1.0.0"
+
+
