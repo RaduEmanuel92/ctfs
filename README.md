@@ -1,1 +1,1 @@
-# Some writeups for the CTF's that I've attended to.
+# Some writeups for the CTFs that I've attended to.
